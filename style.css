@@ -1,17 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+ 
+* {
+  box-sizing: border-box;
+}
+ 
 body {
-    font-family: sans-serif;
- }
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+header {
+  display: inline;
+}
 
- h2 {
-    color: #00a2c6;
- }
-  
- h3 {
-    color: #00a2c6;
- }
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-image: linear-gradient(to bottom right, #9988aa, #333344);
+  text-align: center;
+  color: white;
+}
+ 
+nav {
+  background-color: #333344;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+ 
+nav ul {
+  padding-inline: 4rem;
+ 
+  display: flex;
+  gap: 2rem;
+}
+ 
+nav li {
+  list-style-type: none;
+}
+ 
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+ 
+  color: white;
+}
+ 
+nav a:hover {
+  font-weight: bold;
+}
+ 
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+ 
+aside {
+  flex: 1;
+}
+ 
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #333344;
+  align-items: center;
+  text-align: center;
+}
+ 
+h2 {
+  color: #444455;
+}
+ 
+h3 {
+  color: #444455;
+}
+ 
+#content {
+  flex: 5;
+}
 
- footer {
+.card {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
     padding: 20px;
-    color: white;
-    background-color: #00a2c6
- }
+    margin-top: 20px;
+}
+ 
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+} 
+
+.featured-image {
+  width: 100%;
+  max-height: 500px;
+  text-align: center;
+  align-items: center;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery{
+    width:300px;
+}
+
+#gallery{
+    align-items: center;
+    text-align: center;
+}
+
+/* for animation photo slideshow */
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.mySlides {
+  display: hidden;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+}

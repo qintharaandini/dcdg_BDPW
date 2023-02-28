@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cereza's World</title>
     <link rel="stylesheet" href="style.css">
+    <script src="animation.js"></script>
 </head>
 <body>
     <header>
-        <h1>Bayonetta</h1>
-        <p>
-            Bayonetta adalah serangkaian game aksi-petualangan yang dibuat oleh Hideki Kamiya,
-            dikembangkan oleh PlatinumGames
-        </p>
+        <div class="jumbotron">
+            <img src="assets/Logo_for_Bayonetta.png" class="intro" alt="Logo of Bayonetta (Game)">
+            <h1>Bayonetta</h1>
+            <p>
+                Bayonetta adalah serangkaian game aksi-petualangan yang dibuat oleh Hideki Kamiya,
+                dikembangkan oleh PlatinumGames, dan dimiliki oleh Sega. Waralaba diperkenalkan pada 
+                tahun 2009 dengan Bayonetta. Dua sekuel dirilis, Bayonetta 2 dan Bayonetta 3, serta spin-off, 
+                Bayonetta Origins: Cereza and the Lost Demon.
+            </p>
+        </div>
         <nav>
             <ul>
                 <li><a href="#tentang">Tentang Cereza</a></li>
@@ -24,60 +30,62 @@
     </header>
 
     <main>
-        <h1>Bayonetta</h1>
-        <img src="assets/Logo_for_Bayonetta.png" alt="Logo of Bayonetta (Game)">
-        <p>
-            Bayonetta adalah serangkaian game aksi-petualangan yang dibuat oleh Hideki Kamiya,
-            dikembangkan oleh PlatinumGames, dan dimiliki oleh Sega. Waralaba diperkenalkan pada 
-            tahun 2009 dengan Bayonetta. Dua sekuel dirilis, Bayonetta 2 dan Bayonetta 3, serta spin-off, 
-            Bayonetta Origins: Cereza and the Lost Demon.
-        </p>
-    
-        <ul>
-            <il>Tentang Cereza</il>
-            <il>Series</il>
-            <il>Gallery</il>
-        </ul>
+        <div id="content">
+            <article class="card">
+                <h2>Tentang Bayonetta (Cereza)</h2>
+                <img src="assets/bayonetta-wallpaper-small.jpg" class="featured-image" alt="Bayonetta (Cereza)">
+                <p>
+                    Bayonetta adalah tokoh utama/protagonis. Dia adalah Penyihir Umbra yang penuh gaya dan misterius
+                    yang memiliki bakat luar biasa dalam seni peluru. Setelah 500 tahun tertidur di peti mati yang terendam
+                    di dasar danau dan terbangun tanpa ingatan apa pun selain statusnya sebagai penyihir, Bayonetta berjuang
+                    untuk menemukan kebenaran tentang masa lalunya.
+                </p>
+            </article>
+            
+            <article class="card">
+                <h2>Series</h2>
+                <ol style="list-style-type:upper-roman">
+                    <li>Bayonetta 1</li>
+                    <li>Bayonetta 2</li>
+                    <li>Bayonetta 3</li>
+                    <li>Bayonetta Origins: Cereza and the Lost Demon</li>
+                </ol>
+            </article>
+            
+            <article class="card">
+                <h2>Gallery</h2>
+                <div id="gallery" class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="assets/Bayo1.png" class="gallery" alt="Bayonetta (Cereza) in Bayonetta 1" style="width:100%">
+                    </div>
 
-        <article>
-            <h2>Tentang Bayonetta (Cereza)</h2>
-            <img src="assets/bayonetta-wallpaper-small.jpg" alt="Bayonetta (Cereza)">
-            <p>
-                Bayonetta adalah tokoh utama/protagonis. Dia adalah Penyihir Umbra yang penuh gaya dan misterius
-                yang memiliki bakat luar biasa dalam seni peluru. Setelah 500 tahun tertidur di peti mati yang terendam
-                di dasar danau dan terbangun tanpa ingatan apa pun selain statusnya sebagai penyihir, Bayonetta berjuang
-                untuk menemukan kebenaran tentang masa lalunya.
-            </p>
-        </article>
-        
-        <article>
-            <h2>Series</h2>
-            <ul>
-                <ol>Bayonetta 1</ol>
-                <ol>Bayonetta 2</ol>
-                <ol>Bayonetta 3</ol>
-                <ol>Bayonetta Origins: Cereza and the Lost Demon</ol>
-            </ul>
-        </article>
-        
-        <article>
-            <h2>Gallery</h2>
-            <img src="assets/Bayo1.png" alt="Bayonetta (Cereza) in Bayonetta 1">
-            <img src="assets/Bayo2.png" alt="Bayonetta (Cereza) in Bayonetta 2">
-            <img src="assets/Bayo3.png" alt="Bayonetta (Cereza) in Bayonetta 3">
-        </article>
+                    <div class="mySlides fade">
+                        <img src="assets/Bayo2.png" class="gallery" alt="Bayonetta (Cereza) in Bayonetta 2" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="assets/Bayo3.png" class="gallery" alt="Bayonetta (Cereza) in Bayonetta 3" style="width:100%">
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="slideNow(1)"></span>
+                    <span class="dot" onclick="slideNow(2)"></span>
+                    <span class="dot" onclick="slideNow(3)"></span>
+                </div>
+            </article>
+        </div>
         
         <aside>
-            <article>
+            <article class="profile card">
                 <header>
                     <h2>Creator</h2>
                     <p>Merupakan remaja yang terobsesi dengan internet sejak dini dan suka makan nasi goreng</p>
                     <figure>
-                        <img src="assets/1674926729432.png">
+                        <img src="assets/1674926729432.png" class="" alt="Foto creator">
                         <figcaption>Creator terlihat bahagia</figcaption>
                     </figure>
                 </header>
-                <section>
+                <section class="profile">
                     <h3>Informasi Creator</h3>
                     <table>
                         <tr>
